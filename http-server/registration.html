@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="main">
+    <div id="form-box">
+      <h1 style="text-align:center;">Registration Form</h1>
+      <form id="form">
+        <div id="username" class="inputs">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div id="emailid" class="inputs">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div id="passwd" class="inputs">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+        <div id="dob_id" class="inputs">
+          <label for="dob">Date of Birth</label>
+          <input id="dob" type="date" required />
+        </div>
+        <div id="agree">
+          <input id="tc" type="checkbox"> Agree to the terms and conditions.</input>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="table-box">
+      <h1 style="text-align:center;">Entries from Registration Form</h1>
+      <table id="user-table">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Date of Birth</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="formValidation.js"></script> 
+</body>
+</html>
